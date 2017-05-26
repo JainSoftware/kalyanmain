@@ -1,0 +1,39 @@
+v.1.08d
+
+[01] [fix] search returns pending listings
+	=> _searchresults.php
+
+[02] [fix] check if subcats array exists and is set
+	=> templates/tpl_list.php
+
+[03] [fix] check if $field_id is not empty before adding to $cat_fields[]
+	=> plugins/custom_fields/user-form-block.php
+
+[04] [fix] if language is not english, toggle status is broken
+	=> admin/admin-plans.php
+
+[05] [fix] Facebook login broken because of API update by Facebook
+	=> whole 'vendor' folder, now includes a 'facebook' folder
+
+[06] [improvement] add annual plan option
+	=> admin/admin-plans.php
+	=> admin/admin-process-create-plan.php
+	=> admin/admin-process-edit-plan.php
+	=> _msg.php
+	=> user/process-add-place.php
+	=> templates/user_templates/tpl_process-add-place.php
+
+[07] [fix] mercadopago payer email for subscriptions, if no email found with social login, display message
+	=> user/process-add-place.php
+	=> templates/user_templates/tpl_process-add-place.php
+	=> translations/user_translations/trans-process-add-place.php
+
+[08] [fix] mercadopago notification handler not setting place to paid status
+	=> payment_gateways/mercadopago.php
+
+[09] [improvement] include call to 'my.functions.php' in common.inc.php
+	=> inc/common.inc.php
+
+[10] [improvement] make pic width and height customizable through my.functions.php file
+	=> user/process-upload.php
+	=> user/process-add-place.php
