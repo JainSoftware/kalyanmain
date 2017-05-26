@@ -1,13 +1,13 @@
 <?php
 // database credentials
 $db_host      = 'localhost';
-$db_name      = 'YOUR_DATABASE_NAME';
-$db_user      = 'YOUR_DATABASE_USERNAME';
-$db_user_pass = 'USERNAME_PASSWORD';
+$db_name      = 'kalyan';
+$db_user      = 'root';
+$db_user_pass = '';
 
 // base url, where the script will be installed
 // *please do not include a trailing slash*
-$baseurl = 'http://yoursite.com';
+$baseurl = 'http://localhost/kalyan';
 
 // include global logic
 require_once('common.inc.php');
